@@ -23,9 +23,8 @@ function makeCalendar (id, year, month) {
   } else {
     startFrom = date.getDay() - 1;
   }
-console.log(daysAmount);
-console.log(Math.ceil(daysAmount/7));
-  for (let i = 0; i <= Math.ceil((daysAmount+ startFrom) / 7); i++) {
+
+  for (let i = 0; i <= Math.ceil((daysAmount + startFrom) / 7); i++) {
     tr = document.createElement('tr');
     table.appendChild(tr);
     for (let j = 0; j < 7; j++) {
